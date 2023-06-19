@@ -28,7 +28,12 @@ export const shadcnButton = defineRecipe({
       default: {
         bg: 'shadcn.primary',
         color: 'shadcn.primaryForeground',
-        _hover: { bg: 'shadcn.primary' },
+        _hover: {
+          bg: {
+            base: 'hsl(222.2 47.4% 11.2% / 0.9)',
+            _dark: 'hsl(210 40% 98% / 0.9)',
+          },
+        },
       },
       destructive: {
         bg: 'shadcn.destructive',

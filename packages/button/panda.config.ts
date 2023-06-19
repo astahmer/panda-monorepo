@@ -1,6 +1,6 @@
 import { defineConfig } from '@pandacss/dev'
 import presetPanda from '@pandacss/preset-panda'
-import myMonorepoPreset from '@my-monorepo/preset'
+import { myMonorepoPreset } from '@my-monorepo/preset'
 import { shadcnButton } from './src/button.recipe'
 
 export default defineConfig({
