@@ -1,8 +1,10 @@
 import { defineConfig } from '@pandacss/dev'
+import presetPanda from '@pandacss/preset-panda'
+import myMonorepoPreset from '@my-monorepo/preset'
 import { shadcnButton } from './src/button.recipe'
-import { semanticTokens } from './theme/semantic-tokens'
 
 export default defineConfig({
+  presets: [myMonorepoPreset, presetPanda],
   // Whether to use css reset
   preflight: true,
 
@@ -16,7 +18,6 @@ export default defineConfig({
   theme: {
     extend: {
       recipes: { shadcnButton },
-      semanticTokens,
     },
   },
 

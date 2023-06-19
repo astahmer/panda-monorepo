@@ -1,4 +1,5 @@
 import { definePreset } from '@pandacss/dev'
+import { semanticTokens } from './semantic-tokens'
 
 export default definePreset({
   theme: {
@@ -10,6 +11,7 @@ export default definePreset({
       },
       semanticTokens: {
         colors: {
+          ...semanticTokens.colors,
           'my-monorepo': {
             'nice-yellow': { value: '{colors.nice-yellow}' },
           },
