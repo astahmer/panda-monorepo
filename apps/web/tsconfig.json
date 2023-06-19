@@ -20,6 +20,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src", "styled-system"],
+  "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

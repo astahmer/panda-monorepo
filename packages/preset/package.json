@@ -14,5 +14,8 @@
   },
   "dependencies": {
     "@pandacss/dev": "^0.3.2"
+  },
+  "devDependencies": {
+    "@pandacss/types": "^0.3.2"
   }
 }

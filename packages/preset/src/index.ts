@@ -1,7 +1,8 @@
 import { definePreset } from '@pandacss/dev'
+import type { Preset } from '@pandacss/types'
 import { semanticTokens } from './semantic-tokens'
 
-export default definePreset({
+export const myMonorepoPreset = definePreset({
   theme: {
     extend: {
       tokens: {
@@ -19,4 +20,4 @@ export default definePreset({
       },
     },
   },
-}) as any
+}) as Preset

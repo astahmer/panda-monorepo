@@ -10,11 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@my-monorepo/button": "workspace:^",
+    "@my-monorepo/preset": "workspace:^",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@pandacss/dev": "^0.3.2",
+    "@pandacss/preset-panda": "^0.3.2",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.59.0",

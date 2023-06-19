@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import './panda.css'
-import { css } from '../styled-system/css'
+import { css } from '@my-monorepo/ui-lib/css'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +19,7 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <div className={css({ fontSize: '2xl', fontWeight: 'bold' })}>Hello 🐼!</div>
+      <div className={css({ fontSize: '2xl', fontWeight: 'bold', color: 'my-monorepo.nice-yellow' })}>Hello 🐼!</div>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
         <p>

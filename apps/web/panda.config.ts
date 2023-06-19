@@ -1,6 +1,11 @@
 import { defineConfig } from '@pandacss/dev'
+import presetPanda from '@pandacss/preset-panda'
+import { myMonorepoPreset } from '@my-monorepo/preset'
+
+console.log(myMonorepoPreset)
 
 export default defineConfig({
+  presets: [myMonorepoPreset, presetPanda],
   // Whether to use css reset
   preflight: false,
 
@@ -16,6 +21,7 @@ export default defineConfig({
   },
 
   // The output directory for your css system
-  outdir: 'styled-system',
+  outdir: '@my-monorepo/ui-lib',
+  emitPackage: true,
   jsxFramework: 'react',
 })

@@ -23,6 +23,12 @@ importers:
 
   apps/web:
     dependencies:
+      '@my-monorepo/button':
+        specifier: workspace:^
+        version: link:../../packages/button
+      '@my-monorepo/preset':
+        specifier: workspace:^
+        version: link:../../packages/preset
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -33,6 +39,9 @@ importers:
       '@pandacss/dev':
         specifier: ^0.3.2
         version: 0.3.2(@types/react-dom@18.0.11)(@types/react@18.0.37)(astro@2.6.4)(typescript@5.0.2)
+      '@pandacss/preset-panda':
+        specifier: ^0.3.2
+        version: 0.3.2
       '@types/react':
         specifier: ^18.0.37
         version: 18.0.37
@@ -106,6 +115,10 @@ importers:
       '@pandacss/dev':
         specifier: ^0.3.2
         version: 0.3.2(@types/react-dom@18.0.11)(@types/react@18.0.37)(astro@2.6.4)(typescript@5.0.4)
+    devDependencies:
+      '@pandacss/types':
+        specifier: ^0.3.2
+        version: 0.3.2
 
 packages:
 
