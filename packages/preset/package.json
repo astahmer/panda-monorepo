@@ -8,7 +8,7 @@
   "license": "ISC",
   "scripts": {
     "reset": "rimraf node_modules && rimraf dist",
-    "codegen": "panda codegen",
+    "codegen": "panda codegen --clean",
     "build": "tsup src/index.ts --dts --format=esm,cjs --clean --dts --external @pandacss/dev",
     "dev": "tsup --watch"
   },
