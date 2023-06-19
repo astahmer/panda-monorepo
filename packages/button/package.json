@@ -9,8 +9,9 @@
   "scripts": {
     "reset": "rimraf node_modules && rimraf dist",
     "codegen": "panda codegen --clean",
-    "build": "vite build",
-    "dev": "vite"
+    "build": "tsup src/index.ts --dts --format=esm,cjs --clean --dts --external @pandacss/dev --external @my-monorepo/ui-lib",
+    "dev": "pnpm build --watch",
+    "preview": "vite"
   },
   "dependencies": {
     "@ark-ui/react": "^0.6.0",
