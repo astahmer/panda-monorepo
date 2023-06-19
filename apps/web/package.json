@@ -12,6 +12,7 @@
   "dependencies": {
     "@my-monorepo/button": "workspace:^",
     "@my-monorepo/preset": "workspace:^",
+    "@my-monorepo/some-component": "workspace:^",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
