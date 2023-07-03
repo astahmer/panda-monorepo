@@ -11,6 +11,7 @@ export default defineConfig({
   include: [
     './src/**/*.{js,jsx,ts,tsx}',
     './pages/**/*.{js,jsx,ts,tsx}',
+    './stories/**/*.{js,jsx,ts,tsx}',
     // if you remove this one, the `SomeComponent` styles will be missing in the final css
     './node_modules/@my-monorepo/some-component/dist/panda.json',
     // this one is unnecessary since no `css` function (or style props etc) is directly used in this package
