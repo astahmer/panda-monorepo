@@ -90,6 +90,27 @@ importers:
       '@pandacss/preset-panda':
         specifier: ^0.3.2
         version: 0.3.2
+      '@storybook/addon-essentials':
+        specifier: ^7.0.24
+        version: 7.0.24(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/addon-interactions':
+        specifier: ^7.0.24
+        version: 7.0.24(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/addon-links':
+        specifier: ^7.0.24
+        version: 7.0.24(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/blocks':
+        specifier: ^7.0.24
+        version: 7.0.24(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/react':
+        specifier: ^7.0.24
+        version: 7.0.24(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.2)
+      '@storybook/react-vite':
+        specifier: ^7.0.24
+        version: 7.0.24(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.2)(vite@4.3.9)
+      '@storybook/testing-library':
+        specifier: ^0.0.14-next.2
+        version: 0.0.14-next.2
       '@types/react':
         specifier: ^18.0.37
         version: 18.0.37
@@ -114,6 +135,12 @@ importers:
       eslint-plugin-react-refresh:
         specifier: ^0.3.4
         version: 0.3.4(eslint@8.38.0)
+      prop-types:
+        specifier: ^15.8.1
+        version: 15.8.1
+      storybook:
+        specifier: ^7.0.24
+        version: 7.0.24
       typescript:
         specifier: ^5.0.2
         version: 5.0.2
@@ -3248,6 +3275,23 @@ packages:
       chalk: 4.1.2
     dev: true
 
+  /@joshwooding/vite-plugin-react-docgen-typescript@0.2.1(typescript@5.0.2)(vite@4.3.9):
+    resolution: {integrity: sha512-ou4ZJSXMMWHqGS4g8uNRbC5TiTWxAgQZiVucoUrOCWuPrTbkpJbmVyIi9jU72SBry7gQtuMEDp4YR8EEXAg7VQ==}
+    peerDependencies:
+      typescript: '>= 4.3.x'
+      vite: ^3.0.0 || ^4.0.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      glob: 7.2.3
+      glob-promise: 4.2.2(glob@7.2.3)
+      magic-string: 0.27.0
+      react-docgen-typescript: 2.2.2(typescript@5.0.2)
+      typescript: 5.0.2
+      vite: 4.3.9
+    dev: true
+
   /@joshwooding/vite-plugin-react-docgen-typescript@0.2.1(typescript@5.0.4)(vite@4.3.9):
     resolution: {integrity: sha512-ou4ZJSXMMWHqGS4g8uNRbC5TiTWxAgQZiVucoUrOCWuPrTbkpJbmVyIi9jU72SBry7gQtuMEDp4YR8EEXAg7VQ==}
     peerDependencies:
@@ -4228,6 +4272,48 @@ packages:
       - supports-color
     dev: true
 
+  /@storybook/builder-vite@7.0.24(typescript@5.0.2)(vite@4.3.9):
+    resolution: {integrity: sha512-pdCHtAe8XhEIajp8s59nzaAJH026ExoRPgBcIuL+H3GyB5xlqf3GbXosFx82X7q1z1HNkGDMoPDiNP9JA2n40g==}
+    peerDependencies:
+      '@preact/preset-vite': '*'
+      typescript: '>= 4.3.x'
+      vite: ^3.0.0 || ^4.0.0
+      vite-plugin-glimmerx: '*'
+    peerDependenciesMeta:
+      '@preact/preset-vite':
+        optional: true
+      typescript:
+        optional: true
+      vite-plugin-glimmerx:
+        optional: true
+    dependencies:
+      '@storybook/channel-postmessage': 7.0.24
+      '@storybook/channel-websocket': 7.0.24
+      '@storybook/client-logger': 7.0.24
+      '@storybook/core-common': 7.0.24
+      '@storybook/csf-plugin': 7.0.24
+      '@storybook/mdx2-csf': 1.1.0
+      '@storybook/node-logger': 7.0.24
+      '@storybook/preview': 7.0.24
+      '@storybook/preview-api': 7.0.24
+      '@storybook/types': 7.0.24
+      browser-assert: 1.2.1
+      es-module-lexer: 0.9.3
+      express: 4.18.2
+      fs-extra: 11.1.1
+      glob: 8.1.0
+      glob-promise: 6.0.3(glob@8.1.0)
+      magic-string: 0.27.0
+      remark-external-links: 8.0.0
+      remark-slug: 6.1.0
+      rollup: 3.25.1
+      typescript: 5.0.2
+      vite: 4.3.9
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: true
+
   /@storybook/builder-vite@7.0.24(typescript@5.0.4)(vite@4.3.9):
     resolution: {integrity: sha512-pdCHtAe8XhEIajp8s59nzaAJH026ExoRPgBcIuL+H3GyB5xlqf3GbXosFx82X7q1z1HNkGDMoPDiNP9JA2n40g==}
     peerDependencies:
@@ -4622,6 +4708,33 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: true
 
+  /@storybook/react-vite@7.0.24(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.2)(vite@4.3.9):
+    resolution: {integrity: sha512-+a01kqBOfH7U5Vd6bFHow3hIvsSMwcmEOnLCNrzuwHwiQxqxMEQLPQ5C7PgqCQl5M1OgR+AjL0dx1g03CqwqRQ==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+      vite: ^3.0.0 || ^4.0.0
+    dependencies:
+      '@joshwooding/vite-plugin-react-docgen-typescript': 0.2.1(typescript@5.0.2)(vite@4.3.9)
+      '@rollup/pluginutils': 4.2.1
+      '@storybook/builder-vite': 7.0.24(typescript@5.0.2)(vite@4.3.9)
+      '@storybook/react': 7.0.24(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.2)
+      '@vitejs/plugin-react': 3.1.0(vite@4.3.9)
+      ast-types: 0.14.2
+      magic-string: 0.27.0
+      react: 18.2.0
+      react-docgen: 6.0.0-alpha.3
+      react-dom: 18.2.0(react@18.2.0)
+      vite: 4.3.9
+    transitivePeerDependencies:
+      - '@preact/preset-vite'
+      - encoding
+      - supports-color
+      - typescript
+      - vite-plugin-glimmerx
+    dev: true
+
   /@storybook/react-vite@7.0.24(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.4)(vite@4.3.9):
     resolution: {integrity: sha512-+a01kqBOfH7U5Vd6bFHow3hIvsSMwcmEOnLCNrzuwHwiQxqxMEQLPQ5C7PgqCQl5M1OgR+AjL0dx1g03CqwqRQ==}
     engines: {node: '>=16'}
@@ -4647,6 +4760,46 @@ packages:
       - supports-color
       - typescript
       - vite-plugin-glimmerx
+    dev: true
+
+  /@storybook/react@7.0.24(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.2):
+    resolution: {integrity: sha512-JAgSs8ANysBl3+cOAjFSVG3bA2V/wP6jyu7oK0jSATRQhHRjRS/tHFMA82j0j98G2sr3JXQUxNt55Qq3k2mUcg==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+      typescript: '*'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      '@storybook/client-logger': 7.0.24
+      '@storybook/core-client': 7.0.24
+      '@storybook/docs-tools': 7.0.24
+      '@storybook/global': 5.0.0
+      '@storybook/preview-api': 7.0.24
+      '@storybook/react-dom-shim': 7.0.24(react-dom@18.2.0)(react@18.2.0)
+      '@storybook/types': 7.0.24
+      '@types/escodegen': 0.0.6
+      '@types/estree': 0.0.51
+      '@types/node': 16.18.38
+      acorn: 7.4.1
+      acorn-jsx: 5.3.2(acorn@7.4.1)
+      acorn-walk: 7.2.0
+      escodegen: 2.1.0
+      html-tags: 3.3.1
+      lodash: 4.17.21
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-element-to-jsx-string: 15.0.0(react-dom@18.2.0)(react@18.2.0)
+      ts-dedent: 2.2.0
+      type-fest: 2.19.0
+      typescript: 5.0.2
+      util-deprecate: 1.0.2
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
     dev: true
 
   /@storybook/react@7.0.24(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.4):
@@ -10206,6 +10359,14 @@ packages:
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+    dev: true
+
+  /react-docgen-typescript@2.2.2(typescript@5.0.2):
+    resolution: {integrity: sha512-tvg2ZtOpOi6QDwsb3GZhOjDkkX0h8Z2gipvTg6OVMUyoYoURhEiRNePT8NZItTVCDh39JJHnLdfCOkzoLbFnTg==}
+    peerDependencies:
+      typescript: '>= 4.3.x'
+    dependencies:
+      typescript: 5.0.2
     dev: true
 
   /react-docgen-typescript@2.2.2(typescript@5.0.4):
