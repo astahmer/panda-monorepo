@@ -23,6 +23,9 @@ importers:
 
   apps/storybook:
     devDependencies:
+      '@pandacss/dev':
+        specifier: ^0.3.2
+        version: 0.3.2(@types/react-dom@18.0.11)(@types/react@18.0.37)(astro@2.6.4)(typescript@5.0.4)
       '@storybook/addon-essentials':
         specifier: ^7.0.24
         version: 7.0.24(react-dom@18.2.0)(react@18.2.0)
