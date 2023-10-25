@@ -1,3 +1,6 @@
+a new example repository with more use-cases: https://github.com/astahmer/panda-monorepo-setup
+
+
 example of a panda monorepo usage with a consuming app and multiple ui-lib providers
 
 was asked here https://discord.com/channels/1118988919804010566/1118988920533823540/1120270002352836648
